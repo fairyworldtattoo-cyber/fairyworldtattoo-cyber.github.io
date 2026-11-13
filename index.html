@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FairyWorldTattoo — custom illustrative, black and grey, tribal and color tattoos in the Youngstown, Ohio area. Appointments by message.">
+<meta name="theme-color" content="#0b0810">
+<title>FairyWorldTattoo | Custom Tattoos</title>
+<style>
+:root{--bg:#0b0810;--panel:#15101c;--ink:#fbf7ff;--muted:#b9adbf;--pink:#ff4fa3;--violet:#a78bfa;--line:#30243a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:#0b0810eF;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:.04em;font-size:1.15rem}.brand span{color:var(--pink)}nav{display:flex;gap:22px;color:var(--muted);font-size:.92rem}nav a:hover{color:var(--pink)}
+.hero{padding:90px 0 78px;background:radial-gradient(ellipse at 80% 10%,#55245a66,transparent 38%),radial-gradient(ellipse at 15% 80%,#8c246b33,transparent 35%),linear-gradient(135deg,#110b18,#0b0810 65%)}
+.eyebrow{color:var(--pink);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:800}
+h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.96;letter-spacing:-.06em;margin:18px 0 22px;max-width:850px}
+h1 em{font-style:normal;color:var(--pink)}.hero p{color:var(--muted);font-size:1.15rem;max-width:620px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;background:var(--pink);color:#160b14;font-weight:800;border:1px solid var(--pink)}.btn.secondary{background:transparent;color:var(--ink);border-color:#6c5476}.btn:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.note{margin-top:22px;color:#cbbdd0;font-size:.9rem}
+section{padding:72px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}.section-head h2{font-size:clamp(2rem,5vw,3.4rem);line-height:1;margin:8px 0 0;letter-spacing:-.04em}.section-head p{max-width:430px;color:var(--muted);margin:0}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}.filter{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:9px 14px;cursor:pointer}.filter.active,.filter:hover{background:#39203a;border-color:var(--pink);color:#fff}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.work-card{padding:0;text-align:left;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel);color:var(--ink);cursor:pointer;position:relative}.work-card img{display:block;width:100%;height:360px;object-fit:cover;transition:transform .35s}.work-card:hover img{transform:scale(1.035)}.work-caption{display:flex;flex-direction:column;padding:13px 15px 16px}.work-caption small{color:var(--pink);text-transform:uppercase;letter-spacing:.13em;font-size:.68rem;font-weight:800}.work-caption strong{font-size:.98rem;margin-top:3px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.about-panel{background:linear-gradient(145deg,#21152a,#120e18);border:1px solid var(--line);border-radius:22px;padding:30px}.about-panel h2{font-size:2.6rem;line-height:1.05;margin:10px 0 18px}.about-panel p,.service-card p{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.chip{border:1px solid #55405f;padding:8px 12px;border-radius:99px;color:#e6d9ec;font-size:.86rem}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.service-card .num{color:var(--pink);font-weight:900;letter-spacing:.15em}.service-card h3{margin:10px 0 7px;font-size:1.2rem}
+.contact{background:linear-gradient(135deg,#29142d,#15101c 70%);border:1px solid #55304f;border-radius:24px;padding:clamp(26px,5vw,52px);display:flex;justify-content:space-between;align-items:center;gap:28px}.contact h2{font-size:clamp(2rem,5vw,3.4rem);line-height:1;margin:8px 0 14px}.contact p{color:var(--muted);max-width:540px;margin:0}
+.socials{display:flex;flex-wrap:wrap;gap:10px}.socials a{border:1px solid #765274;border-radius:999px;padding:11px 16px;font-weight:700}.socials a:hover{background:#482545}
+footer{padding:28px 0 42px;color:#94869a;font-size:.85rem;border-top:1px solid var(--line);margin-top:70px}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:#050308ed;z-index:30;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal img{max-width:min(95vw,1000px);max-height:86vh;object-fit:contain;border-radius:12px}.close{position:absolute;top:18px;right:22px;background:#21152a;color:white;border:1px solid #6d5574;border-radius:50%;width:44px;height:44px;font-size:1.5rem;cursor:pointer}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr)}.work-card img{height:300px}.about-grid{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.contact{align-items:flex-start;flex-direction:column}}
+@media(max-width:540px){nav{gap:12px;font-size:.8rem}.nav{min-height:62px}.brand{font-size:1rem}.hero{padding:68px 0 60px}.gallery{grid-template-columns:1fr 1fr;gap:9px}.work-card img{height:220px}.work-caption{padding:10px}.work-caption strong{font-size:.85rem}.services{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#top">FAIRY<span>WORLD</span>TATTOO</a>
+  <nav aria-label="Main navigation"><a href="#portfolio">Portfolio</a><a href="#styles">Styles</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">Custom tattoo art · Youngstown, Ohio area</div>
+  <h1>Make your story<br><em>permanent.</em></h1>
+  <p>Custom tattoos created with care, creativity, and attention to detail. Explore the portfolio and message to discuss your next piece.</p>
+  <div class="actions">
+    <a class="btn" href="#contact">Book by message</a>
+    <a class="btn secondary" href="#portfolio">Explore the portfolio</a>
+  </div>
+  <div class="note">Private studio · Appointment only · Address shared privately with confirmed clients</div>
+</div></section>
+
+<section id="portfolio"><div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Selected work</div><h2>Portfolio</h2></div><p>A selection of custom pieces, from bold black and grey to colorful designs and detailed lettering.</p></div>
+  <div class="filters" aria-label="Filter portfolio">
+    <button class="filter active" data-filter="All">All work</button>
+    <button class="filter" data-filter="Black & Grey">Black & Grey</button>
+    <button class="filter" data-filter="Illustrative">Illustrative</button>
+    <button class="filter" data-filter="Tribal">Tribal</button>
+    <button class="filter" data-filter="Color Tattoos">Color</button>
+    <button class="filter" data-filter="Lettering & Memorial">Lettering</button>
+  </div>
+  <div class="gallery">
+    
+      <button class="work-card" type="button" data-category="Black &amp; Grey" data-full="images/black-grey-panther.jpg" aria-label="View Dynamic big-cat illustration">
+        <img src="images/black-grey-panther.jpg" alt="Dynamic big-cat illustration" loading="lazy">
+        <span class="work-caption"><small>Black &amp; Grey</small><strong>Dynamic big-cat illustration</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Lettering &amp; Memorial" data-full="images/memorial-floral-names.png" aria-label="View Floral memorial lettering">
+        <img src="images/memorial-floral-names.png" alt="Floral memorial lettering" loading="lazy">
+        <span class="work-caption"><small>Lettering &amp; Memorial</small><strong>Floral memorial lettering</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Color Tattoos" data-full="images/blue-paw-portrait.jpg" aria-label="View Blue paw-print pet portrait">
+        <img src="images/blue-paw-portrait.jpg" alt="Blue paw-print pet portrait" loading="lazy">
+        <span class="work-caption"><small>Color Tattoos</small><strong>Blue paw-print pet portrait</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Tribal" data-full="images/tribal-sleeve.jpg" aria-label="View Bold tribal sleeve">
+        <img src="images/tribal-sleeve.jpg" alt="Bold tribal sleeve" loading="lazy">
+        <span class="work-caption"><small>Tribal</small><strong>Bold tribal sleeve</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Illustrative" data-full="images/red-mask.jpg" aria-label="View Red and black illustrative mask">
+        <img src="images/red-mask.jpg" alt="Red and black illustrative mask" loading="lazy">
+        <span class="work-caption"><small>Illustrative</small><strong>Red and black illustrative mask</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Illustrative" data-full="images/fantasy-warrior.jpg" aria-label="View Fantasy warrior sleeve">
+        <img src="images/fantasy-warrior.jpg" alt="Fantasy warrior sleeve" loading="lazy">
+        <span class="work-caption"><small>Illustrative</small><strong>Fantasy warrior sleeve</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Black &amp; Grey" data-full="images/wolf-forest.jpg" aria-label="View Wolf and forest composition">
+        <img src="images/wolf-forest.jpg" alt="Wolf and forest composition" loading="lazy">
+        <span class="work-caption"><small>Black &amp; Grey</small><strong>Wolf and forest composition</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Color Tattoos" data-full="images/blue-butterflies-lettering.jpg" aria-label="View Blue butterflies and lettering">
+        <img src="images/blue-butterflies-lettering.jpg" alt="Blue butterflies and lettering" loading="lazy">
+        <span class="work-caption"><small>Color Tattoos</small><strong>Blue butterflies and lettering</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Color Tattoos" data-full="images/sunflower-lettering.jpg" aria-label="View Sunflower and lettering">
+        <img src="images/sunflower-lettering.jpg" alt="Sunflower and lettering" loading="lazy">
+        <span class="work-caption"><small>Color Tattoos</small><strong>Sunflower and lettering</strong></span>
+      </button>
+
+      <button class="work-card" type="button" data-category="Black &amp; Grey" data-full="images/grim-reaper.jpg" aria-label="View Grim reaper illustration">
+        <img src="images/grim-reaper.jpg" alt="Grim reaper illustration" loading="lazy">
+        <span class="work-caption"><small>Black &amp; Grey</small><strong>Grim reaper illustration</strong></span>
+      </button>
+  </div>
+</div></section>
+
+<section id="styles"><div class="wrap about-grid">
+  <div class="about-panel"><div class="eyebrow">The artist's approach</div><h2>Personal designs.<br><em style="color:var(--pink)">Individual stories.</em></h2>
+    <p>Whether you have a clear idea or need help shaping a concept, let's create a tattoo that feels personal to you. Custom designs, cover-up consultations, and a range of illustrative styles.</p>
+    <div class="chips"><span class="chip">Black & Grey</span><span class="chip">Illustrative</span><span class="chip">Neo-Illustrative</span><span class="chip">Tribal</span><span class="chip">Traditional</span><span class="chip">Color</span><span class="chip">Cover-ups</span></div>
+  </div>
+  <div><div class="eyebrow">How booking works</div><h2 style="font-size:2.4rem;line-height:1.05">Simple, personal, by appointment.</h2>
+    <div class="services" style="grid-template-columns:1fr">
+      <div class="service-card"><span class="num">01</span><h3>Send your idea</h3><p>Message through Instagram or Facebook with your concept, placement, and approximate size.</p></div>
+      <div class="service-card"><span class="num">02</span><h3>Discuss the design</h3><p>We'll talk through the details, estimated price, and available appointment times.</p></div>
+      <div class="service-card"><span class="num">03</span><h3>Book your session</h3><p>Appointments are arranged privately. Studio details are shared directly with confirmed clients.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+  <div><div class="eyebrow">Ready when you are</div><h2>Let's talk tattoos.</h2><p>For questions, custom designs, pricing, and appointments, send a message through your preferred social platform. Serving the Youngstown, Ohio area. No public studio address listed.</p></div>
+  <div class="socials">
+    <a href="https://www.instagram.com/fairyworldtattoo?igsh=NzZiaG5iNGdsM2Zl" target="_blank" rel="noopener">Instagram ↗</a>
+    <a href="https://www.facebook.com/share/1a4e4xzN1E/" target="_blank" rel="noopener">Facebook ↗</a>
+    <a href="https://www.tiktok.com/@user175270189?_t=ZP-904pwXgzAMA&_r=1" target="_blank" rel="noopener">TikTok ↗</a>
+  </div>
+</div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> FairyWorldTattoo</span><span>Youngstown, Ohio area · By appointment only</span></div></footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Portfolio image"><button class="close" aria-label="Close image">×</button><img src="" alt=""></div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const filters=[...document.querySelectorAll('.filter')], cards=[...document.querySelectorAll('.work-card')];
+filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(x=>x.classList.toggle('active',x===btn));const f=btn.dataset.filter;cards.forEach(c=>c.hidden=!(f==='All'||c.dataset.category===f));}));
+const modal=document.getElementById('modal'), modalImg=modal.querySelector('img');
+cards.forEach(c=>c.addEventListener('click',()=>{modalImg.src=c.dataset.full;modalImg.alt=c.getAttribute('aria-label');modal.classList.add('open');}));
+function closeModal(){modal.classList.remove('open');modalImg.src='';}
+modal.querySelector('.close').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+</script>
+</body></html>
